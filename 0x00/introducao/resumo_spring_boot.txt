@@ -1,0 +1,5 @@
+﻿Spring Boot é um projeto dentro do ecossistema Spring que ajuda a criar aplicações que funcionam por si próprias, que dependem somente do Java instalado, o Spring Boot oferece como recursos ajudar com as tarefas e configurações da infraestrutura do projeto, com as configurações iniciais, traz como vantagem organizar o projeto melhor, facilitar em colocar o projeto em execução, já tem também um servidor embarcado, ajuda a organizar as métricas, organiza o “pom.xml” que inclusive é a forma de fazer as adições das dependências no Spring Boot.
+
+Spring Initializr é quem vai ajudar a inserir dependências e startes mais importantes dentro da aplicação Spring Boot, podendo ser usado diretamente do site ou do IDE que você utilizar
+
+Para meu uso eu prefiro a utilização do Spring Boot em Spring Tools Suite, uma IDE muito mais fluída e prática neste quesito.
