@@ -2,4 +2,4 @@
 
 Spring Initializr é quem vai ajudar a inserir dependências e startes mais importantes dentro da aplicação Spring Boot, podendo ser usado diretamente do site ou do IDE que você utilizar
 
-Para meu uso eu prefiro a utilização do Spring Boot em Spring Tools Suite, uma IDE muito mais fluída e prática neste quesito.
+Para meu uso eu prefiro a utilização do Spring Boot em Spring Tools Suites, uma IDE muito mais fluída e prática neste quesito.
