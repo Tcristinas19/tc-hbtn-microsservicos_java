@@ -19,41 +19,41 @@ public class ProductController {
 		this.productRepository = productRepository;
 	}
 	
-	@ApiOperation(value = "Retorna a mensagem de Boas Vindas")
+	@ApiOperation(value = "Responsável por retornar uma mensagem de boas vindas")
 	@GetMapping("/welcome")
 	public String welcome() {
 		return "Bem Vindo à Product Rest API";				
 	}
 	
-	@ApiOperation(value = "Retorna uma lista de produtos")
+	@ApiOperation(value = "Responsável por retornar uma lista de produtos")
 	@ApiResponse(code = 11, message = "Warning - the process returned more than 1000 products.")
 	@GetMapping("/allProducts")
 	public List<Product> listAllProducts(){
 		return productRepository.getAllProducts();
 	}
 	
-	@ApiOperation(value = "Retorna um produto pelo Id")
+	@ApiOperation(value = "Responsável por retornar um produto pelo Id")
 	@ApiResponse(code = 12, message = "The field id not informed. This information is required.")
 	@GetMapping("/findProductById/{id}")
 	public Product findProductById(@PathVariable Long id){
 		return productRepository.getProductById(id);
 	}
 	
-	@ApiOperation(value = "Retorna a adição de um novo produto")
+	@ApiOperation(value = "Responsável por adicionar um novo produto")
 	@ApiResponse(code = 10, message = "Required fields not informed.")
 	@PostMapping("/addProduct")
 	public void addProduct(@RequestBody Product product){
 		productRepository.addProduct(product);
 	}
 	
-	@ApiOperation(value = "Retorna a atualização de um produto")
+	@ApiOperation(value = "Responsável por atualizar um produto")
 	@ApiResponse(code = 13, message = "User not allowed to remove a product from this category.")
 	@PutMapping("/updateProduct")
 	public void updateProduct(@RequestBody Product product){
 		productRepository.updateProduct(product);
 	}
 	
-	@ApiOperation(value = "Retorna a atualização de um produto")
+	@ApiOperation(value = "Responsável por remover um produto")
 	@ApiResponse(code = 14, message = "No information has been updated. The new information is the same as recorded in the database.")
 	@DeleteMapping("/removeProduct")
 	public void removeProduct(@RequestBody Product product){
